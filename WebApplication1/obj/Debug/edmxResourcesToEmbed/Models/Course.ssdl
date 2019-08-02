@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TemporaryDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbleTemp">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cname" Type="nvarchar" MaxLength="50" />
+    <Property Name="ctech" Type="nvarchar" MaxLength="50" />
+    <Property Name="cduration" Type="int" />
+    <Property Name="cprice" Type="money" />
+  </EntityType>
+  <EntityContainer Name="TemporaryDbModelStoreContainer">
+    <EntitySet Name="tbleTemp" EntityType="Self.tbleTemp" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

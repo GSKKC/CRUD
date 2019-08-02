@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TemporaryDbModelStoreContainer" CdmEntityContainer="TemporaryDbEntities">
+    <EntitySetMapping Name="tbleTemps">
+      <EntityTypeMapping TypeName="TemporaryDbModel.tbleTemp">
+        <MappingFragment StoreEntitySet="tbleTemp">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cname" ColumnName="cname" />
+          <ScalarProperty Name="ctech" ColumnName="ctech" />
+          <ScalarProperty Name="cduration" ColumnName="cduration" />
+          <ScalarProperty Name="cprice" ColumnName="cprice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
